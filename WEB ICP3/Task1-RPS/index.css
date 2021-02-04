@@ -1,0 +1,74 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    padding: 20px;
+}
+header> h1
+{
+    color: red;
+    text-align: center;
+    font-family: "arial";
+}
+body {
+    background-color: lightblue;
+}
+.scoreboard
+{
+    border: 3px solid black;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    color: black;
+    padding: 5px 5px;
+    font-family: Arial ;
+    position: relative;
+}
+
+.badge{
+    background: green;
+    color: whitesmoke;
+    font-size: initial;
+    padding: 5px 5px;
+}
+
+.result{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial ;
+}
+
+.choices{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.choice{
+    display: inline-block;
+    margin: 0px 60px;
+    padding: 0px;
+}
+
+.choices>.choice > img {
+    height: 100px;
+    width: 100px;
+}
+.choice:hover{
+    cursor: pointer;
+    background: yellowgreen;
+}
+body> p {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: "arial";
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

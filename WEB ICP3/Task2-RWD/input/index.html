@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<br>
+<style>
+    #color1 {
+        height: 40px;
+        width: 50%;
+        background-color: solid white;
+    }
+
+    #color2 {
+        height: 40px;
+        width: 50%;
+        background-color: black;
+    }
+</style>
+<body>
+<div class="container-fluid" style="background-color: solid white" >
+    <br>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-10 sidenav">
+        <div class="media screen">
+            <div class="media-left">
+                <img src="../SampleImages/bean.jpg" class="media-object" style="width:100px;height: 100px;"/>
+            </div>
+            <div class="media-body">
+                <h1 class="media-heading" align="right">Navya Yarlagadda</h1>
+                <h3 align="right" style="font-family: Tahoma; color: rebeccapurple">Student</h3>
+            </div>
+            <hr>
+        </div>
+        <div>
+            <div class="col-sm-2" style="font-family: Tahoma">
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-10" style="font-family: Tahoma">
+                <div>
+                    <img src="https://www.tekshapers.com/uploads/blog_image/15362384091533896513blog-sco2.jpg" width="1140px" height="350px">
+                </div>
+                <div>
+                    <br><p style="font-size:30px; font-family: Tahoma">Featured Work</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="https://github.com/WrathChaos/react-native-beautiful-timeline" target="_blank">
+                                <img src="../SampleImages/application1.jpg" alt="Time line" style="width:200px; height: 300px;">
+                                <div class="caption">
+                                    <p>Link</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="https://github.com/incwell-technology/Android-Bootcamp" target="_blank">
+                                <img src="../SampleImages/application2.jpg" alt="Andriod Boot Camp" style="width:200px; height: 300px;">
+                                <div class="caption">
+                                    <p>Link</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="https://github.com/mdarman187/ObjectDetection-using-tensorflowLite_App" target="_blank">
+                                <img src="../SampleImages/application3.jpg" alt="Object Detection" style="width:200px; height: 300px;">
+                                <div class="caption">
+                                    <p>Link</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $( window ).resize(function() {
+                var heights = $(".well").map(function() {
+                    return $(this).height();
+                }).get(),b
+                maxHeight = Math.max.apply(null, heights);
+                $(".well").height(maxHeight);
+            });
+        </script>
+</body>
+</html>
