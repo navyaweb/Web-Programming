@@ -1,0 +1,33 @@
+<div class = "body" alignment="centre">
+  <header class="text-center">
+    <h1>EVENTS </h1>
+  </header>
+  <form>
+    <p>Enter the event name</p>
+    <input type="text" class="form-control" placeholder="Enter event" name="event" [(ngModel)]="event">
+    <p>Select the date and time of event</p>
+    <input type="datetime-local" class="form-control" id="tasktime" [(ngModel)]="time" name="time">
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="saveEvent()">Save Task</button>
+  </form>
+
+  <div class="event mt-20">
+    <ul class="event list-card">
+      <li class="list-item-card pt-10" *ngFor="let event of events;let i=index" [class.completed]="event.completed">
+        <div class="view">
+          <input class="toggle mr-10" type="checkbox" (click)="toggleEventComplete(i)" [checked]="event.completed">
+          <label class="mr-10">{{event.name}}</label>
+          <span *ngIf="countDownTimes[i]">
+                    <button class="btn btn-primary mr-10">{{countDownTimes[i]?.days + 'days'}}</button>
+                    <button class="btn btn-primary mr-10">{{countDownTimes[i]?.hours + 'hours'}}</button>
+                    <button class="btn btn-primary mr-10">{{countDownTimes[i]?.minutes + 'minutes'}}</button>
+                    <button class="btn btn-primary mr-10">{{countDownTimes[i]?.seconds + 'seconds'}}</button>
+                </span>
+          <button class="btn btn-danger delete mr-10" (click)="removeEvent(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+

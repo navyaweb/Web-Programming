@@ -1,0 +1,40 @@
+.body{
+  background: linear-gradient(to bottom, #74ebd5 5%, #9face6 90%);
+  width: 600px;
+  background-size: cover;
+  min-height: 10%;
+  position: absolute;
+  alignment: center;
+  padding-bottom: 100px;
+  padding-right: 150px;
+}
+.body{
+  alignment: top;
+  padding-left: 650px;
+  padding-top: 200px;
+}
+h1{
+  color:  #1c437c;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+}
+p{
+  font-size: 20px;
+}
+button{
+  background-color: #1c437c;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+input{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
