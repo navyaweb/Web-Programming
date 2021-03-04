@@ -1,0 +1,28 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+    overflow: auto;
+}
+
+.isbn-col {
+    flex: 0 0 100px !important;
+    white-space: unset !important;
+}
+
+.button-row {
+    margin: 10px 0;
+}
+
+.container {
+    width: 50%;
+    align-content: center;
+    padding-left: 18%;
+}
+
+.divider {
+    width: 220px;
+    height: auto;
+    display: inline-block;
+}
